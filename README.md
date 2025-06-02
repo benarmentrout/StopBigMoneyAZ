@@ -2,7 +2,8 @@ Hello ADP Progressive Council! If you're new to GitHub, don't worry - I am too. 
 
 The three files here are the basis of our website at StopBigMoneyAZ.com. The main one to pay attention to is the .html.
 
-If you want to edit what the website looks like, click on the index.html file and make edits as you see fit. Once you are done, committ the changes to the 'proposed-edits' branch.
+If you want to edit what the website looks like, click on the index.html file and make edits as you see fit. 
+Once you are done, committ the changes to a new branch. This will create a pull request that I can review to ensure it doesn't mess anything up.
 
 DO NOT COMMITT TO MAIN.
 
