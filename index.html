@@ -137,7 +137,7 @@
 </head>
 <body>
 
-<header>
+<header class="floating-header" id="floatingHeader">
   <h1>Stop Big Money AZ</h1>
   <nav>
     <a href="#home" class="nav-link">Home</a>
@@ -148,7 +148,7 @@
 
 </header>
 
-<main>
+<main class="main-content">
     <section id="home">
       <h2>Home</h2>
       <p>
@@ -276,6 +276,19 @@
 <a class="floating-button" href="https://docs.google.com/forms/d/e/1FAIpQLSc0cGUVtUrib9rtX-fADTSAqFnEOkWy4wkZ9E-WUEYEvRhiDg/viewform" target="_blank">
         Endorse the Resolution Now →
 </a>
+<script>
+  function adjustContentPadding() {
+    const header = document.getElementById('floatingHeader');
+    const content = document.querySelector('.main-content'); // or body if no wrapper
+    if (header && content) {
+      const headerHeight = header.offsetHeight;
+      content.style.paddingTop = `${headerHeight}px`;
+    }
+  }
 
+  // Run on page load and on window resize
+  window.addEventListener('load', adjustContentPadding);
+  window.addEventListener('resize', adjustContentPadding);
+</script>
 </body>
 </html>
