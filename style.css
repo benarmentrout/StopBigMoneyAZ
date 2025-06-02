@@ -1,0 +1,11 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.bg-gray-100 { background-color: #f7fafc; }
+.text-center { text-align: center; }
+.text-blue-600 { color: #3182ce; }
+.underline { text-decoration: underline; }
+.hidden { display: none; }
