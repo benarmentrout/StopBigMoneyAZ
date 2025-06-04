@@ -132,8 +132,13 @@
       z-index: 1000;
       box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
       transition: background-color 0.3s ease;
+      animation: blinker 1.5s linear infinite;
   }
-  
+  @keyframes blinker {
+      50% {
+          opacity: 0;
+      }
+  }
   .floating-button:hover {
     background-color: #a50000;
   }
