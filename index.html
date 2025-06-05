@@ -132,13 +132,15 @@
       z-index: 1000;
       box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
       transition: background-color 0.3s ease;
-      animation: blinker 1.5s linear infinite;
+      animation: blinker 3s linear infinite;
   }
   @keyframes blinker {
-      50% {
-          opacity: 0;
-      }
+      0%   {background-color: #BF0A30;}
+      25%  {background-color: #FED700;}
+      50%  {background-color: #CE5C17;}
+      100% {background-color: #002868;}
   }
+    
   .floating-button:hover {
     background-color: #a50000;
   }
@@ -150,11 +152,11 @@
 <header class="floating-header" id="floatingHeader">
   <h1>Stop Big Money AZ</h1>
   <nav>
-    <a href="#home" class="nav-link">Home     </a>
+    <a href="#home" class="nav-link">Home</a>
     <a href="#why" class="nav-link">Why This Matters</a>
     <a href="#resolution" class="nav-link">Our Resolution</a>
     <a href="#endorsements" class="nav-link">Endorsements</a>
-    <a href="#about-us" class="nav-link">About Us      </a>
+    <a href="#about-us" class="nav-link">About Us</a>
   </nav>
 
 </header>
