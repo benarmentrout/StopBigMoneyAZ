@@ -14,63 +14,41 @@
       color: #111;
     }
 
-    header {
+    /* IMAGE HEADER */
+    .banner-header {
       background-color: #002868;
-      color: #fff;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1000;
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
-      overflow: hidden;
-    }
-    
-    .header-image-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-height: 20vh;
+      height: 20vh;
       overflow: hidden;
     }
 
-    .header-img-container img {
+    .banner-header img {
       max-height: 100%;
       max-width: 100%;
-      height: auto;
       width: auto;
+      height: auto;
       display: block;
     }
-    
-    header h1 {
-      font-size: 2.8rem;
-      margin: 0;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
 
-    nav {
-      padding: 15px 0px;
+    /* NAVIGATION HEADER */
+    .nav-header {
       background-color: #002868;
       text-align: center;
+      padding: 15px 0;
     }
 
-    nav a {
+    .nav-header a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
       text-transform: uppercase;
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 10px;
+      display: inline-block;
     }
 
-    nav a:hover {
+    .nav-header a:hover {
       text-decoration: underline;
       color: #FED700;
     }
@@ -123,19 +101,18 @@
         columns: 1;
       }
 
-      nav {
+      .nav-header {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        align-items: flex-end;
+        justify-content: center;
       }
 
-      nav a {
-        margin: 0 0;
-        white-space: normal;
-        flex: 1 1 auto;
+      .nav-header a {
+        margin: 8px;
       }
     }
+
+    /* Floating button */
     .floating-button {
       position: fixed;
       bottom: 0;
@@ -154,19 +131,19 @@
       box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
       transition: background-color 0.3s ease;
       animation: blinker 3s linear infinite;
-  }
-  @keyframes blinker {
+    }
+
+    @keyframes blinker {
       0%   {background-color: #BF0A30;}
       25%  {background-color: #FED700;}
       50%  {background-color: #CE5C17;}
-      75% {background-color: #002868;}
+      75%  {background-color: #002868;}
       100% {background-color: #BF0A30;}
-  }
-    
-  .floating-button:hover {
-    background-color: #a50000;
-  }
+    }
 
+    .floating-button:hover {
+      background-color: #a50000;
+    }
   </style>
 </head>
 <body>
