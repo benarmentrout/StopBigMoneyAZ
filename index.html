@@ -206,7 +206,7 @@
 <header class="banner-header">
   <img src="bannerlogo.png" alt="Banner Logo">
 </header>
-<header class="nav-header" id="floatingHeader">
+<header class="nav-header">
   <nav>
     <a href="#home" class="nav-link">Home</a>
     <a href="#why" class="nav-link">Why This Matters</a>
@@ -437,10 +437,8 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const header = document.getElementById('floatingHeader');
-    if (header) {
-      const offset = header.height;
-    }
+    const header = document.querySelector('.nav-header');
+    const offset = header ? header.offsetHeight : 0;
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener("click", function (e) {
