@@ -28,7 +28,23 @@
       text-align: center;
       overflow: hidden;
     }
+    
+    .header-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-height: 20vh;
+      overflow: hidden;
+    }
 
+    .header-img-container img {
+      max-height: 100%;
+      max-width: 100%;
+      height: auto;
+      width: auto;
+      display: block;
+    }
+    
     header h1 {
       font-size: 2.8rem;
       margin: 0;
@@ -37,14 +53,6 @@
       letter-spacing: 1px;
     }
 
-    header img {
-      max-height: 100%;
-      max-width: 100%;
-      height: auto;
-      width: auto;
-      display: block;
-    }
-    
     nav {
       padding: 15px 0px;
       background-color: #002868;
@@ -59,6 +67,7 @@
       text-transform: uppercase;
       display: flex;
       flex-wrap: wrap;
+      margin-top: 10px;
     }
 
     nav a:hover {
@@ -163,7 +172,9 @@
 <body>
 
 <header class="floating-header" id="floatingHeader">
-  <img src="bannerlogo.png" alt="Banner Logo">
+  <div class="header-image-container">
+    <img src="bannerlogo.png" alt="Banner Logo">
+  </div>
   <nav>
     <a href="#home" class="nav-link">Home</a>
     <a href="#why" class="nav-link">Why This Matters</a>
