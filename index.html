@@ -434,20 +434,6 @@
         Endorse the Resolution Now &#128279;
 </a>
 <script>
-  function adjustContentPadding() {
-    const header = document.getElementById('floatingHeader');
-    const content = document.querySelector('.main-content'); // or body if no wrapper
-    if (header && content) {
-      const headerHeight = header.offsetHeight;
-      content.style.paddingTop = `${headerHeight}px`;
-    }
-  }
-
-  // Run on page load and on window resize
-  window.addEventListener('load', adjustContentPadding);
-  window.addEventListener('resize', adjustContentPadding);
-</script>
-<script>
   document.querySelectorAll('.toggle-button').forEach(button => {
     button.addEventListener('click', () => {
       const content = button.nextElementSibling;
