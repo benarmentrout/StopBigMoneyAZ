@@ -22,6 +22,7 @@
       align-items: center;
       height: 20vh;
       overflow: hidden;
+      position: relative;
     }
 
     .banner-header img {
@@ -37,6 +38,8 @@
       background-color: #002868;
       text-align: center;
       padding: 15px 0;
+      top: 0;
+      position: sticky;
     }
 
     .nav-header a {
@@ -148,21 +151,70 @@
     .floating-button:hover {
       background-color: #BF0A30;
     }
+
+    .collapsible-section {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+    
+    .collapsible-section h3 {
+      margin-bottom: 0.5rem;
+      color: #002868;
+    }
+    
+    .toggle-button {
+      background-color: #f1f1f1;
+      color: #002868;
+      cursor: pointer;
+      padding: 10px 14px;
+      border: none;
+      font-weight: bold;
+      font-size: 0.6rem;
+      transition: background-color 0.2s ease;
+    }
+    
+    .toggle-button:hover {
+      background-color: #e0e0e0;
+    }
+    
+    .toggle-button.expanded::after {
+      content: " ▲";
+    }
+    
+    .toggle-button::after {
+      content: " ▼";
+      margin-left: 6px;
+    }
+    
+    .content {
+      display: none;
+      padding: 0.5rem 0 0 0;
+      background-color: #fafafa;
+      border-left: 3px solid #bf0a30;
+    }
+    
+    .content p {
+      margin: 0;
+      padding-left: 1rem;
+    }
   </style>
 </head>
 <body>
 
-<header class="banner-header" id="floatingHeader">
-  <img src="bannerlogo.png" alt="Banner Logo">
+<header>
+  <div class="banner-header" id="floatingHeader">
+    <img src="bannerlogo.png" alt="Banner Logo">
+  </div>
+  
+  <div class="nav-header" id="floatingHeader">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#why" class="nav-link">Why This Matters</a>
+    <a href="#resolution" class="nav-link">Our Resolution</a>
+    <a href="#endorsements" class="nav-link">Endorsements</a>
+    <a href="#about-us" class="nav-link">About Us</a>
+  </div>
 </header>
-
-<div class="nav-header">
-  <a href="#home" class="nav-link">Home</a>
-  <a href="#why" class="nav-link">Why This Matters</a>
-  <a href="#resolution" class="nav-link">Our Resolution</a>
-  <a href="#endorsements" class="nav-link">Endorsements</a>
-  <a href="#about-us" class="nav-link">About Us</a>
-</div>
 
 <main class="main-content">
     <section id="home">
@@ -180,24 +232,39 @@
 
     <section id="why">
       <h2>Why This Matters</h2>
-      <h3>The Research is Clear</h3>
-      <ul>
-        <li><strong>Big Money pushes politics rightward.</strong> Removing bans on outside spending boosts Republican success and makes state legislatures more conservative. (Abdul-Razzak et al., 2017)</li>
-        <li><strong>Voters hate Big Money.</strong> 77% of Americans support limits on campaign spending. When people believe money controls politics, they feel unheard and disengage. (Pew Research Center, 2018; Haenschen et al., 2024; Schnakenberg et al., 2023)</li>
-        <li><strong>Big Money breaks our party and our government.</strong> Outside spending fragments coalitions and undermines effective governance in legislatures. (Norton & Pildes, 2020; Manento, 2019)</li>
-      </ul>
-      <h3>Big Money is Bigger than Ever</h3>
-      <ul>
-        <li><strong>Nearly 60% of ads in 2022 Democratic House primaries</strong> were funded by outside groups, not candidates.</li>
-        <li><strong>In 2012, just 159 donors gave $1 million or more</strong> — accounting for nearly 60% of all Super PAC funding nationwide.</li>
-      </ul>
-      <h3>Arizona Hasn't Been Spared</h3>
-      <ul>
-        <li><strong>$5.3 million in outside spending in the 2024 AZ-03 Primary:</strong> Yassamin Ansari edged out Raquel Terán by 39 votes, helped by over a million dollars in spending from pro-cryptocurrency Super-PACs.</li>
-        <li><strong>$257,000 in outside spending in the 2012 AZ-09 Primary:</strong> Kyrsten Sinema began her rise to power (and later, fall from grace) with help from big-money allies.</li>
-        <li><strong>$354,000 in outside spending in the 2020 LD2 & LD3 Primaries:</strong> Through July, 79% of this outside spending had gone to just two candidates.</li>
-        <li><a href="https://www.tucsonsentinel.com/local/report/072823_primary_election_spending/outside-spending-climbs-tucson-democratic-primaries-city-clerk-probes-unregistered-pac/">Outside spending climbs in Tucson Democratic primaries; City Clerk probes unregistered PAC (2023)</a></li>
-      </ul>
+      <div class="collapsible-section">
+        <h3>The Research is Clear</h3>
+        <button class="toggle-button">Show More</button>
+        <div class="content">
+          <ul>
+            <li><strong>Big Money pushes politics rightward.</strong> Removing bans on outside spending boosts Republican success and makes state legislatures more conservative. (Abdul-Razzak et al., 2017)</li>
+            <li><strong>Voters hate Big Money.</strong> 77% of Americans support limits on campaign spending. When people believe money controls politics, they feel unheard and disengage. (Pew Research Center, 2018; Haenschen et al., 2024; Schnakenberg et al., 2023)</li>
+            <li><strong>Big Money breaks our party and our government.</strong> Outside spending fragments coalitions and undermines effective governance in legislatures. (Norton & Pildes, 2020; Manento, 2019)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapsible-section">
+        <h3>Big Money is Bigger than Ever</h3>
+        <button class="toggle-button">Show More</button>
+        <div class="content">
+          <ul>
+            <li><strong>Nearly 60% of ads in 2022 Democratic House primaries</strong> were funded by outside groups, not candidates.</li>
+            <li><strong>In 2012, just 159 donors gave $1 million or more</strong> — accounting for nearly 60% of all Super PAC funding nationwide.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapsible-section">
+        <h3>Arizona Hasn't Been Spared</h3>
+        <button class="toggle-button">Show More</button>
+        <div class="content">
+          <ul>
+            <li><strong>$5.3 million in outside spending in the 2024 AZ-03 Primary:</strong> Yassamin Ansari edged out Raquel Terán by 39 votes, helped by over a million dollars in spending from pro-cryptocurrency Super-PACs.</li>
+            <li><strong>$257,000 in outside spending in the 2012 AZ-09 Primary:</strong> Kyrsten Sinema began her rise to power (and later, fall from grace) with help from big-money allies.</li>
+            <li><strong>$354,000 in outside spending in the 2020 LD2 & LD3 Primaries:</strong> Through July, 79% of this outside spending had gone to just two candidates.</li>
+            <li><a href="https://www.tucsonsentinel.com/local/report/072823_primary_election_spending/outside-spending-climbs-tucson-democratic-primaries-city-clerk-probes-unregistered-pac/">Outside spending climbs in Tucson Democratic primaries; City Clerk probes unregistered PAC (2023)</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
   <section id="resolution">
@@ -218,7 +285,7 @@
     <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Endorsements</h2>
     <a href="#national-endorsements" class="nav-link"><i>See National Leaders</i></a>
     <br>
-    <a>Helpful vocabulary: ADP = Arizona Democratic Party,  LD = Legislative District, SCM = (ADP) State Committee Member, PC = Precinct Committeeperson</a>
+    <p>Helpful vocabulary: ADP = Arizona Democratic Party,  LD = Legislative District, SCM = (ADP) State Committee Member, PC = Precinct Committeeperson</p>
     <!-- Arizona Leaders -->
     <h3 class="text-2xl font-semibold text-gray-700 mb-4">Arizona Leaders</h3>
     <ul id="arizona-endorsements" class="space-y-2">
@@ -228,11 +295,13 @@
       <li><strong>Nick Collins</strong>, Secretary, ADP Progressive Council</li>
       <li><strong>Dan O’Neal</strong>, State Coordinator, Progressive Democrats of Arizona; Chair Emeritus, ADP Progressive Council</li>
       <li><strong>Emily Kirkland</strong>, PC, LD 8, Former Executive Director, Progress Arizona</li>
+      <li><strong>Jennifer Hilsbos</strong>, Chair, Pinal County Democratic Party</li>
       <li><strong>Paul Stapleton-Smith</strong>, SCM, LD 21</li>
       <li><strong>Sen. Catherine Miranda</strong>, State Senator & Senate Democratic Assistant Leader, LD 11</li>
       <li><strong>Sen. Analise Ortiz</strong>, State Senator, LD 24</li>
       <li><strong>Rep. Mariana Sandoval</strong>, State Representative, LD 13</li>
       <li><strong>Rep. Brian Garcia</strong>, State Representative, LD 8</li>
+      <li><strong>Markus Ceniceros</strong>, Board Member, Littleton Elementary School District; SCM, LD 22; 3rd Vice Chair, Maricopa County Democratic Party</li>
       <li><strong>Melissa Galarza</strong>, SCM, LD 12</li>
       <li><strong>Nicolas Mink</strong>, Vice Chair, Arizona Democratic Party</li>
       <li><strong>Shawnte Rothschild</strong>, Vice Chair, Arizona Democratic Party</li>
@@ -251,6 +320,9 @@
       <li><strong>Jeffrey Tucker</strong>, SCM, LD 13; At-Large Board Member</li>
       <li><strong>Alex Kack</strong>, Executive Director, Pima County Democratic Party</li>
       <li><strong>Dhruv Rebba</strong>, Co-Chair, ADP AAPI Caucus, Vice President, ASU Young Dems</li>
+      <li><strong>Ashton Dolce</strong>, AZ State Chair, High School Democrats of America</li>
+      <li><strong>Alex Alvarez</strong>, SCM, LD 12</li>
+      <li><strong>Hunter Holt</strong>, 2nd Vice Chair, Pima County Democratic Party; President, Marana Unified School Board, State Senate Candidate, LD 17</li>
       <li><strong>Susie Thornton</strong>, Secretary & SCM, LD 12</li>
       <li><strong>Alex Ray Sanchez</strong>, Communications Chair, Pima County Democratic Party; Southern Arizona Vice Chair, ADP Progressive Council</li>
       <li><strong>Ann Heitland</strong>, Former Senior Vice-Chair, ADP; Former Chair, Coconino County Democratic Party</li>
@@ -302,7 +374,6 @@
       <li><strong>Rivko Knox</strong>, SCM, LD 2</li>
       <li><strong>Vivian Perry</strong>, Executive Committee Member & SCM, LD1</li>
       <li><strong>Rebecca Villalpando</strong>, SCM, LD 1</li>
-      <li><strong>Hunter Holt</strong>, 2nd Vice Chair, Pima County Democratic Party; President, Marana Unified School Board, State Senate Candidate, LD 17</li>
       <li><strong>Aaron Essif</strong>, SCM, LD 17</li>
       <li><strong>Ricky Spann</strong>, SCM</li>
       <li><strong>Melissa Westbrook</strong>, SCM, LD 12</li>
@@ -375,6 +446,22 @@
   // Run on page load and on window resize
   window.addEventListener('load', adjustContentPadding);
   window.addEventListener('resize', adjustContentPadding);
+</script>
+<script>
+  document.querySelectorAll('.toggle-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      const isExpanded = button.classList.contains('expanded');
+
+      if (isExpanded) {
+        button.classList.remove('expanded');
+        content.style.display = 'none';
+      } else {
+        button.classList.add('expanded');
+        content.style.display = 'block';
+      }
+    });
+  });
 </script>
 </body>
 </html>
