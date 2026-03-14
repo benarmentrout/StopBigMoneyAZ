@@ -1,0 +1,940 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stop Big Money NM</title>
+  <style>
+    body {
+      margin: 0;
+      padding-bottom: 1rem;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #111;
+    }
+
+    /* IMAGE HEADER */
+    .banner-header {
+      background-color: #002868;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .banner-header img {
+      max-height: 100%;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+    }
+
+    /* NAVIGATION HEADER */
+    .nav-header {
+      background-color: #002868;
+      text-align: center;
+      padding: 15px 0;
+      top: 0;
+      position: sticky;
+    }
+
+    .nav-header a {
+      color: #BF0A30;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    .nav-header a:hover {
+      text-decoration: underline;
+      color: #FED700;
+    }
+
+    main {
+      padding: 0.5rem 2rem 2rem 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    main a {
+      color: #BF0A30
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+    
+    h2 {
+      border-left: 6px solid #bf0a30;
+      padding-left: 0.75rem;
+      color: #222;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .endorsement-list {
+      columns: 2;
+      column-gap: 2rem;
+    }
+
+    .endorsement-list p {
+      margin: 0.3rem 0;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #bf0a30;
+      color: #fed700;
+      padding: 0.7rem 1.2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.button:hover {
+      background-color: #b12236;
+    }
+
+    @media (max-width: 768px) {
+      .endorsement-list {
+        columns: 1;
+      }
+
+      .nav-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .nav-header a {
+        margin: 8px;
+      }
+    }
+
+    /* Floating button */
+    .floating-button {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #b12236; 
+      color: white;
+      padding: 16px 20px;
+      /*font-size: 2.5rem;*/
+      font-weight: bold;
+      border: none;
+      border-radius: 0;
+      text-align: center;
+      text-decoration: none;
+      z-index: 1000;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+      animation: blinker 5s linear infinite;
+    }
+
+    @keyframes blinker {
+      0%   {background-color: #BF0A30;}
+      25%  {background-color: #FED700;}
+      50%  {background-color: #002868;}
+      75%  {background-color: #CE5C17;}
+      100% {background-color: #BF0A30;}
+    }
+
+    .floating-button:hover {
+      background-color: #BF0A30;
+    }
+
+    .collapsible-section {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+    
+    .collapsible-section h3 {
+      margin-bottom: 0.5rem;
+      color: #002868;
+    }
+    
+    .toggle-button {
+      background-color: #f1f1f1;
+      color: #002868;
+      cursor: pointer;
+      padding: 10px 14px;
+      border: none;
+      font-weight: bold;
+      font-size: 0.6rem;
+      transition: background-color 0.2s ease;
+    }
+    
+    .toggle-button:hover {
+      background-color: #e0e0e0;
+    }
+    
+    .toggle-button.expanded::after {
+      content: " ▲";
+    }
+    
+    .toggle-button::after {
+      content: " ▼";
+      margin-left: 6px;
+    }
+    
+    .content {
+      display: none;
+      padding: 0.5rem 0 0 0;
+      background-color: #fafafa;
+      border-left: 3px solid #bf0a30;
+    }
+    
+    .content p {
+      margin: 0;
+      padding-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header class="banner-header">
+  <img src="nm-logo.jpg" alt="Banner Logo">
+</header>
+<header class="nav-header">
+  <nav>
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#peoplesprimary" class="nav-link">The People's Primary</a>
+    <a href="#ppendorsements" class="nav-link">Endorsements</a>
+    <a href="#why" class="nav-link">Why This Matters</a>
+    <a href="#resolution" class="nav-link">The Resolution</a>
+    <!--<a href="#resolutionendorsements" class="nav-link">Resolution Endorsements</a>-->
+    <a href="#about-us" class="nav-link">About Us</a>
+  </nav>
+</header>
+<main class="main-content">
+    <section id="home">
+      <h2>Home</h2>
+      <p>
+        New Mexico Democrats from every corner of the State know the damaging influence that big outside money has on our local, state and federal elections, and we want to ensure that our elected leaders represent our interests, rather than big outside corporate interests.
+      </p>
+      <p>
+      <p>On September 25, 2025, the Resolutions Committee of the Democratic Party of Bernalillo County (DPBC) approved a resolution entitled To Establish a “People’s Primary” Policy Deterring Billionaires and Corporations from Buying or Unduly Influencing Democratic Primaries, which was presented to the County Central Committee of the DPBC on October 11, 2025 and adopted by acclimation. On December 17, 2025, the Chair of the DPNM appointed the ad-hoc committee with a diverse representation from the DPNM Caucuses, including Young Democrats of New Mexico, Rural Caucus, LGBTQIA+ Caucus, Environmental Justice Caucus, the DPBC Resolutions Committee, SPARC, DPNM Vice Chair, Grant County Democratic Party and others. The ad-hoc committee worked diligently and expeditiously from December until the present to fulfill its mandate, and sought legal advice and counsel, and drafted a Rule to ensure, to the greatest extent possible, that candidates in New Mexico Democratic primaries are not benefited by, dependent on, or elected due to big donors spending tens or hundreds of thousands and even millions of dollars to elect the candidates of their choice.
+      </p>
+
+
+      <p>The Democratic Party is the party of the working class and Americans who believe in a one person, one vote democracy where our elections are determined by We the People as equal citizens –– not billionaires and big corporations; and working class voters should have no doubt that the candidates chosen in our primaries are not beholden to the same billionaires and corporations that are exploiting and hurting them. The platform of the Democratic Party of New Mexico (DPNM) affirms that “money is not speech and corporations are not people” and “demand campaign finance reform and the repeal of laws that enable secret money in politics."</p>
+
+      <p>The DPNM, as a voluntary association, has the authority and responsibility to regulate its internal affairs, including nominating processes and primary elections, to ensure fairness, integrity, and alignment with our values. To strengthen our party’s brand, win back trust from our voters, and empower our party to win elections and govern to deliver for the working class, the DPNM must act to confront the crisis of big money corrupting our democracy within the arena under our direct authority: our primary elections.
+      </p>
+      <p>We need your help. On March 7th, 2026, the People's Primary Pledge Resolution was presented to the Delegates at the New Mexico Democratic Party Pre-Primary Convention. If you are a New Mexico Democrat, please show your support by endorsing our People's Primary Pledge <a href="https://docs.google.com/forms/d/1qZ0G_spbb-gp9QDk4cCp1rOlROBGZLrNG2fxdfgXKD8/viewform?edit_requested=true">here</a> and talking to members of the NM State Central Committee (SCC). We encourage everyone to read the policy for themselves to understand it clearly.</p>
+      <p>Other state parties like Arizona, North Carolina and even the DNC itself, have committed to enact reforms like the People's Primary. Want your state to be next? Contact us and we will connect you with our network of organizers and resources to help you along the way.</p>
+
+    </section>
+  
+    <section id="peoplesprimary">
+    <h2>CLICK HERE TO READ: <a href="https://drive.google.com/file/d/1dx9ZgvfFPaSvsoBRfVWagxgKD5UfSNct/view" target="_blank" rel="noopener noreferrer">The People's Primary Policy and FAQs</a></h2>
+    </section>
+  
+
+  <section id="ppendorsements" class="py-16 bg-gray-100">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Policy Endorsements</h2>
+    <a href="#national-endorsements" class="nav-link"><i>See National Leaders</i></a>
+    <br>
+    <p>Want to add your name as an endorser? Go to <a href="https://docs.google.com/forms/d/e/1FAIpQLSem6u-X98LBdwODXy1wdywDfKEsmaBoSrXaXoOM6wMsJZKlFQ/viewform">this form</a> to sign in support.</p>
+    <p>Helpful vocabulary: ADP = Arizona Democratic Party,  LD = Legislative District, SCM = (ADP) State Committee Member, PC = Precinct Committeeperson</p>
+    <!-- Arizona Leaders -->
+    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Arizona Leaders</h3>
+    <ul id="arizona-endorsements" class="space-y-2">
+      <li><strong>Sara Attleson</strong>, Chair, Democratic Party of New Mexico</li>
+      <li><strong>Cam Crawford</strong>, Vice-Chair, Democratic Party of New Mexico</li>
+      <li><strong>Javier Martinez</strong>, NM Speaker of the House</li>
+      <li><strong>Jacob Trujillo</strong>, Chair, Democratic Party of Bernalillo County</li>
+      <li><strong>Harold Pope, Jr.</strong>, NM State Senator (Dist. 23), SCC</li>
+      <li><strong>Antoinette Sedillo Lopez</strong>, NM State Senator (Dist. 16)</li>
+      <li><strong>Dede Feldman</strong>, former NM State Senator (Dist. 13)</li>
+      <li><strong>Debbie O'Malley</strong>, NM State Senator (Dist. 13)</li>
+      <li><strong>Eleanor Chavez</strong>, NM State Representative (Dist. 26), SCC</li>
+      <li><strong>Miguel P. Garcia</strong>, NM State Representative (Dist. 14)</li>
+      <li><strong>Patricia Roybal Caballero</strong>, NM State Representative (Dist. 13), SCC</li>
+      <li><strong>Joaquin Baca</strong>, Albuquerque City Councilor (Dist. 2)</li>
+      <li><strong>Tammy Fiebelkorn</strong>, Albuquerque City Councilor (Dist. 7)</li>
+      <li><strong>Robert Kmak</strong>, Chair, Pct. 154, Bernalillo County</li>
+      <li><strong>Terry Storch</strong>, Chair, Pct. 185, Bernalillo County</li>
+      <li><strong>Sarah Cobb</strong>, Chair, Pct. 108, Bernalillo County, SCC</li>
+      <li><strong>Deborah Potter</strong>, Chair, Ward 15E, Bernalillo County, SCC</li>
+      <li><strong>Lora Lucero</strong>, Chair, Ward 11A, Bernalillo County, PDA-CNM</li>
+      <li><strong>Coby Gentry</strong>, Young Democrats of NM</li>
+      <li><strong>Marty Jacobson</strong>, LGBTQIA+ Caucus</li>
+      <li><strong>Ronnie Ray</strong>, Rural Caucus</li>
+      <li><strong>Carl Peterson</strong>, Vice-Chair Ward 31A, SCC</li>
+      <li><strong>Glenn Griffin</strong>, Grant County Democratic Party, Ward AW Chair</li>
+      <li><strong>Charles Bennett</strong>, Vice-Chair, Ward 19B, Bernalillo County, SCC</li>
+      <li><strong>Roxanne Allen</strong>, CCC CD1, Bernalillo County</li>
+      <li><strong>Lawrence Compton</strong>, Chair, Ward 17C, Bernalillo County</li>
+      <li><strong>Nancy M. Bearce</strong>, CCC CD1, Bernalillo County</li>
+      <li><strong>Jane Yee</strong>, Chair, DPBC Resolutions Committee, CCC CD1, Bernalillo County, SCC</li>
+      <li><strong>Lourdes Remillard</strong>, Chair, Pct. 162, Bernalillo County, SCC</li>
+      <li><strong>Barbara Grothus</strong>, Vice-Chair, Ward 14C, Bernalillo County, SCC</li>
+      <li><strong>Eric Olivas</strong>, CCC, CD1, SCC</li>
+      <li><strong>Donald A. Gallegos</strong>, Ward Chair, 31C, Bernalillo County, SCC</li>
+      <li><strong>Daniel Alfredo Garcia</strong>, CCC CD1, Secretary of DPBC</li>
+      <li><strong>Karl Horak</strong>, CCC CD1</li>
+      <li><strong>Tracey Jordan</strong>, Chair, Pct. 195, Bernalillo County</li>
+      <li><strong>Ralph Wrons</strong>, Vice Chair, Ward 24B, Bernalillo County</li>
+      <li><strong>Donald Meaders</strong>, CCC CD1, SCC</li>
+      <li><strong>Julie Rochman</strong>, Chair, Ward 31B, Bernalillo County</li>
+      <li><strong>Maria Felice Garcia</strong>, Chair, Pct. 165, Bernalillo County, SCC</li>
+      <li><strong>Ana Canales</strong>, Chair, Ward 25B, Bernalillo County, SCC</li>
+      <li><strong>Jennifer Thorne-Lehman</strong>, Chair, Pct. 408</li>
+      <li><strong>Margaret Warigia Bowman</strong>, Chair, Ward 30D, Bernalillo County</li>
+      <li><strong>Alex Applegate</strong>, Environmental Justice Caucus, SCC</li>
+      <li><strong>Jennifer de Garmo</strong>, CCC CD1</li>
+      <li><strong>Frank Theodore Cloak Jr. a/k/a Ted Cloak</strong>, Chair, Pct. 640, Bernalillo County</li>
+      <li><strong>Rachel Coleman</strong>, Environmental Justice Caucus, SCC</li>
+      <li><strong>Chase Jacques-Maynes</strong>, Chair, Environmental Justice Caucus, SCC</li>
+      <li><strong>Nancy Galloway</strong>, SCC - Alt</li>
+      <li><strong>Janet Resnick-Wandel</strong>, Chair, Pct. 15, Bernalillo County</li>
+      <li><strong>Christine McIntosh</strong></li>
+      <li><strong>Ann Lowe</strong>, Grant County Democratic Party</li>
+      <li><strong>Frances Gonzales</strong>, Fuerzas Unidas Caucus Vice-Chair, SCC</li>
+      <li><strong>Wendy Graves</strong></li>
+      <li><strong>Barbara Gabioud</strong></li>
+      <li><strong>Mark Duran</strong></li>
+      <li><strong>Tom Wakely</strong></li>
+      <li><strong>Harry Browne</strong></li>
+      <li><strong>Ronald Lee Ray, Chair</strong>, DPNM Rural Caucus</li>
+      <li><strong>Jennifer Lamborn</strong></li>
+      <li><strong>Maree McHugh</strong></li>
+      <li><strong>Margaret L. Hadderman</strong></li>
+      <li><strong>Doreen McKnight</strong>, Vice-Chair, Ward 11C</li>
+      <li><strong>Claudia Risner</strong>, SCC</li>
+      <li><strong>Grace Dukes</strong></li>
+      <li><strong>Arnold Lane Leckman</strong></li>
+      <li><strong>Janet Wallace-Ortiz</strong>, Grant County SCC</li>
+      <li><strong>Stephen Smith</strong>, Rio Grande Indivisible</li>
+      <li><strong>Deborah Michel</strong>, Young Democrats of New Mexico National Committee Person</li>
+      <li><strong>Melinda Smith</strong></li>
+      <li><strong>Nancy Stephens</strong></li>
+      <li><strong>Michael Effron</strong>, Chair, Precinct 550</li>
+      <li><strong>Carol Trujillo-Fay</strong></li>
+      <li><strong>Matthew “Mateo” Martinez</strong>, Ward 11-C Delegate</li>
+      <li><strong>Lisa Franzen</strong></li>
+      <li><strong>Mara Salcido</strong>, Precinct chair and delegate ward 11C</li>
+      <li><strong>Sarah Stephen</strong></li>
+      <li><strong>Marisol Enriquez (she/her/ella)</strong>, Precinct Chair, 460</li>
+      <li><strong>Denise Fort</strong></li>
+      <li><strong>Sandra Griffin</strong>, GCDP delegate</li>
+      <li><strong>Madigan Ray</strong></li>
+      <li><strong>Pamela Neas</strong>, SCC, CCC EC Sandoval, Ward B Chair</li>
+      <li><strong>Rebecca Black</strong></li>
+      <li><strong>Karen Umland</strong>, PDA-CNM, Delegate Ward 11A</li>
+      <li><strong>Lisa Padilla</strong>, LMSW, Chair, Ward 14C, CCC</li>
+      <li><strong>Loralyn Conover</strong>, Chair, Ward 12B precinct 66</li>
+      <li><strong>Chris Crouch</strong>, SCC, CCC, Chair, Ward 22B Bernalillo - E. Mtns</li>
+
+    </ul>
+    <!-- National Leaders -->
+    <h3 class="text-2xl font-semibold text-gray-700 mt-10 mb-4">National Leaders for the AZ Pledge</h3>
+    <ul id="national-endorsements" class="space-y-2">
+      <li><strong>Sen. Bernie Sanders</strong>, US Senator, Vermont <a href="https://x.com/BernieSanders/status/1930703444425248943"><i>(Statement of support)</i></a></li>
+      <li><strong>Rep. Ro Khanna</strong>, US Congressman, CA-17 <a href="https://x.com/RoKhanna/status/1930759856442757214"><i>(Statement of support)</i></a></li>
+      <li><strong>Rep. Pramila Jayapal</strong>, US Congresswoman, WA-7</li>
+      <li><strong>Larry Cohen</strong>, Past President Communication Workers of America; Board Chair, Our Revolution; DNC Member</li>
+      <li><strong>Lawrence Lessig</strong>, Chair, Equal Citizens; Professor of Law and Leadership at Harvard Law School</li>
+      <li><strong>Alan Minsky</strong>, Executive Director, Progressive Democrats of America, Our Revolution</li>
+    </ul>
+  </div>
+</section>
+  
+  <section id="why">
+      <h2>Why This Matters</h2>
+      <div class="collapsible-section">
+        <h3>The Research is Clear</h3>
+        <button class="toggle-button">Show More</button>
+        <div class="content">
+          <ul>
+            <li><strong>Big Money pushes politics rightward.</strong> Removing bans on outside spending boosts Republican success and makes state legislatures more conservative. (<a href="https://events.bse.eu/live/files/1919-stephanewolton52630">Abdul-Razzak et al., 2017</a>)</li>
+            <li><strong>Voters hate Big Money.</strong> 77% of Americans support limits on campaign spending. When people believe money controls politics, they feel unheard and disengage. (<a href="https://www.pewresearch.org/short-reads/2018/05/08/most-americans-want-to-limit-campaign-spending-say-big-donors-have-greater-political-influence/">Pew Research Center, 2018</a>; <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/ssqu.13356">Haenschen et al., 2024</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4461514">Schnakenberg et al., 2023</a>)</li>
+            <li><strong>Big Money breaks our party and our government.</strong> Outside spending fragments coalitions and undermines effective governance in legislatures. (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3655691">Norton & Pildes, 2020</a>; <a href="https://journals.sagepub.com/doi/10.1177/1354068819834528">Manento, 2019</a>)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapsible-section">
+        <h3>Big Money is Bigger than Ever</h3>
+        <button class="toggle-button">Show More</button>
+        <div class="content">
+          <ul>
+            <li><strong>Nearly 60% of ads in 2022 Democratic House primaries</strong> were funded by outside groups, not candidates.</li>
+            <li><strong>In 2012, just 159 donors gave $1 million or more</strong>, accounting for nearly 60% of all Super PAC funding nationwide.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapsible-section">
+        <h3>New Mexico Hasn't Been Spared from Outside Spending</h3>
+        <button class="toggle-button">Show More</button>
+        <div class="content">
+          <ul>
+            <li><strong>NM In Depth editors discuss elections and dark money with guest Mason Graham of Common Cause</strong> <a href="https://www.youtube.com/watch?v=Z1HMygfyJow">YouTube</a></li>
+            <li><strong>Getting Big Money Out of Politics</strong> - <a href="https://www.commoncause.org/new-mexico/work/campaign-public-financing/">Common Cause New Mexico</a></li>
+            <li><strong>Big money flows to most powerful NM lawmakers</strong> | <a href="https://www.newsfromthestates.com/article/big-money-flows-most-powerful-nm-lawmakers">News From The States</a></li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <section id="resolution">
+    <h2>The Resolution</h2>
+    <p><strong>Resolution Title: Resolution to Establish a People’s Primary Rule Deterring Billionaires and Corporations from Buying or Unduly Influencing New Mexico Democratic Primaries</strong></p>
+    <p><strong>Submitted by: the DPNM Ad Hoc Committee appointed by Chair Attleson in December 2025.</strong></p>
+    <p>WHEREAS, New Mexico Democrats from every corner of the State know the damaging influence that big outside money has on our local, state and federal elections, and we want to ensure that our elected leaders represent our interests, rather than big outside corporate interests; and</p>
+    <p>WHEREAS, on September 25, 2025, the Resolutions Committee of the Democratic Party of Bernalillo County (DPBC) approved a resolution entitled <strong>To Establish a “People’s Primary” Policy Deterring Billionaires and Corporations from Buying or Unduly Influencing Democratic Primaries;</strong> and</p>
+    <p>WHEREAS, such Resolution was presented to the County Central Committee of the DPBC on October 11, 2025 and adopted by acclimation; and</p>
+    <p>WHEREAS, such Resolution was presented to the County Central Committee of the DPBC on October 11, 2025 and adopted by acclimation; and</p>
+    <p>WHEREAS, such Resolution charged the ad hoc committee with developing the proposed DPNM People's Primary Rule to implement and enforce the goal of the Resolution; and</p>
+    <p>WHEREAS, such Resolution directed that the People’s Primary Rule was to be prepared and submitted for a vote by the State Central Committee at the earliest possible date in the spring of 2026; and</p>
+    <p>WHEREAS, the ad-hoc committee worked diligently and expeditiously from December until the present to fulfill its mandate, and sought legal advice and counsel, and drafted a Rule to ensure, to the greatest extent possible, that candidates in New Mexico Democratic primaries are not benefited by, dependent on, or elected due to big donors spending tens or hundreds of thousands and even millions of dollars to elect the candidates of their choice; and</p>
+    <p>WHEREAS, the Democratic Party is the party of the working class and Americans who believe in a one person, one vote democracy where our elections are determined by We the People as equal citizens –– not billionaires and big corporations; and</p>
+    <p>WHEREAS, working class voters should have no doubt that the candidates chosen in our primaries are not beholden to the same billionaires and corporations that are exploiting and hurting them; and</p>
+    <p>WHEREAS, the platform of the Democratic Party of New Mexico (DPNM) affirms that “money is not speech and corporations are not people”; and “demand campaign finance reform and the repeal of laws that enable secret money in politics;” and</p>
+    <p>WHEREAS, the DPNM, as a voluntary association, has the authority and responsibility to regulate its internal affairs, including nominating processes and primary elections, to ensure fairness, integrity, and alignment with our values; and</p>
+    <p>WHEREAS, to strengthen our party’s brand, win back trust from our voters, and empower our party to win elections and govern to deliver for the working class, the DPNM must act to confront the crisis of big money corrupting our democracy within the arena under our direct authority: our primary elections.</p>
+    <p><strong>NOW, THEREFORE, BE IT RESOLVED</strong> that the Democratic Party of New Mexico will establish a "People's Primary" Rule to reduce, to the greatest extent possible, the use of massive private wealth to buy or unduly influence our primary elections. This Rule will ensure, to the greatest extent possible, that candidates in New Mexico Democratic primaries are not benefited by, dependent on, or elected due to outside or independent electioneering spending funded by big donors who are circumventing legal limits on direct contributions to a candidate’s campaign fund to spend tens or hundreds of thousands and even millions of dollars of private wealth to elect the candidates of their choice.</p>
+    <p><strong>BE IT FURTHER RESOLVED</strong> that the proposed People’s Primary Rule will be submitted to the DPNM Rules Committee for its consideration and possible revision in April 2026 at the Call of the DPNM Chair, and will be submitted to the State Central Committee (SCC) for its consideration and possible revision in May 2026.  If approved by the SCC and incorporated into the DPNM’s governing documents, the People’s Primary Rule is expected to be effective in 2027 and beyond.</p>
+
+    
+  </section>
+
+<section id="about-us">
+  <h2>About Us</h2>
+    <p>The <strong>Stop Big Money NM</strong> campaign is a project of a grassroots of Democrats committed to building a party that puts the working class first, not billionaires and big corporations. We are united by the mission to bring the progressive values of our communities to the state legislature and beyond, to create the New Mexico and United States of America we all deserve.
+    Interested in joining us? Email Lora Lucero at loralucero3@gmail.com.
+
+    <p><i>See a problem with the website? Contact the original site author, Ben Armentrout, at benarmentrout29@gmail.com. Please be nice - I'm better at building lasers than websites :) Or reach out to Amelia Pardo at Beaei@pm.me who has updated it for New Mexico.</i></p>
+    <p><i>Media or other inquiries can be directed to loralucero3@gmail.com.</i></p>
+</section>
+
+</main>
+
+<a class="floating-button" href="https://docs.google.com/forms/d/1qZ0G_spbb-gp9QDk4cCp1rOlROBGZLrNG2fxdfgXKD8/viewform?edit_requested=true" target="_blank">
+        Endorse the People's Primary &#128279;
+</a>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector('.nav-header');
+    const offset = header ? header.offsetHeight : 0;
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetID = this.getAttribute("href");
+        const targetElement = document.querySelector(targetID);
+
+        if (targetElement) {
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+  document.querySelectorAll('.toggle-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      const isExpanded = button.classList.contains('expanded');
+
+      if (isExpanded) {
+        button.classList.remove('expanded');
+        content.style.display = 'none';
+      } else {
+        button.classList.add('expanded');
+        content.style.display = 'block';
+      }
+    });
+  });
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stop Big Money NM</title>
+  <style>
+    body {
+      margin: 0;
+      padding-bottom: 1rem;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #111;
+    }
+
+    /* IMAGE HEADER */
+    .banner-header {
+      background-color: #002868;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .banner-header img {
+      max-height: 100%;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+    }
+
+    /* NAVIGATION HEADER */
+    .nav-header {
+      background-color: #002868;
+      text-align: center;
+      padding: 15px 0;
+      top: 0;
+      position: sticky;
+    }
+
+    .nav-header a {
+      color: #BF0A30;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    .nav-header a:hover {
+      text-decoration: underline;
+      color: #FED700;
+    }
+
+    main {
+      padding: 0.5rem 2rem 2rem 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    main a {
+      color: #BF0A30
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+    
+    h2 {
+      border-left: 6px solid #bf0a30;
+      padding-left: 0.75rem;
+      color: #222;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .endorsement-list {
+      columns: 2;
+      column-gap: 2rem;
+    }
+
+    .endorsement-list p {
+      margin: 0.3rem 0;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #bf0a30;
+      color: #fed700;
+      padding: 0.7rem 1.2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a.button:hover {
+      background-color: #b12236;
+    }
+
+    @media (max-width: 768px) {
+      .endorsement-list {
+        columns: 1;
+      }
+
+      .nav-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .nav-header a {
+        margin: 8px;
+      }
+    }
+
+    /* Floating button */
+    .floating-button {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #b12236; 
+      color: white;
+      padding: 16px 20px;
+      /*font-size: 2.5rem;*/
+      font-weight: bold;
+      border: none;
+      border-radius: 0;
+      text-align: center;
+      text-decoration: none;
+      z-index: 1000;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+      animation: blinker 5s linear infinite;
+    }
+
+    @keyframes blinker {
+      0%   {background-color: #BF0A30;}
+      25%  {background-color: #FED700;}
+      50%  {background-color: #002868;}
+      75%  {background-color: #CE5C17;}
+      100% {background-color: #BF0A30;}
+    }
+
+    .floating-button:hover {
+      background-color: #BF0A30;
+    }
+
+    .collapsible-section {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+    
+    .collapsible-section h3 {
+      margin-bottom: 0.5rem;
+      color: #002868;
+    }
+    
+    .toggle-button {
+      background-color: #f1f1f1;
+      color: #002868;
+      cursor: pointer;
+      padding: 10px 14px;
+      border: none;
+      font-weight: bold;
+      font-size: 0.6rem;
+      transition: background-color 0.2s ease;
+    }
+    
+    .toggle-button:hover {
+      background-color: #e0e0e0;
+    }
+    
+    .toggle-button.expanded::after {
+      content: " ▲";
+    }
+    
+    .toggle-button::after {
+      content: " ▼";
+      margin-left: 6px;
+    }
+    
+    .content {
+      display: none;
+      padding: 0.5rem 0 0 0;
+      background-color: #fafafa;
+      border-left: 3px solid #bf0a30;
+    }
+    
+    .content p {
+      margin: 0;
+      padding-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header class="banner-header">
+  <img src="nm-logo.jpg" alt="Banner Logo">
+</header>
+<header class="nav-header">
+  <nav>
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#peoplesprimary" class="nav-link">The People's Primary</a>
+    <a href="#ppendorsements" class="nav-link">Endorsements</a>
+    <a href="#why" class="nav-link">Why This Matters</a>
+    <a href="#resolution" class="nav-link">The Resolution</a>
+    <!--<a href="#resolutionendorsements" class="nav-link">Resolution Endorsements</a>-->
+    <a href="#about-us" class="nav-link">About Us</a>
+  </nav>
+</header>
+<main class="main-content">
+    <section id="home">
+      <h2>Home</h2>
+      <p>
+        New Mexico Democrats from every corner of the State know the damaging influence that big outside money has on our local, state and federal elections, and we want to ensure that our elected leaders represent our interests, rather than big outside corporate interests.
+      </p>
+      <p>
+      <p>On September 25, 2025, the Resolutions Committee of the Democratic Party of Bernalillo County (DPBC) approved a resolution entitled To Establish a “People’s Primary” Policy Deterring Billionaires and Corporations from Buying or Unduly Influencing Democratic Primaries, which was presented to the County Central Committee of the DPBC on October 11, 2025 and adopted by acclimation. On December 17, 2025, the Chair of the DPNM appointed the ad-hoc committee with a diverse representation from the DPNM Caucuses, including Young Democrats of New Mexico, Rural Caucus, LGBTQIA+ Caucus, Environmental Justice Caucus, the DPBC Resolutions Committee, SPARC, DPNM Vice Chair, Grant County Democratic Party and others. The ad-hoc committee worked diligently and expeditiously from December until the present to fulfill its mandate, and sought legal advice and counsel, and drafted a Rule to ensure, to the greatest extent possible, that candidates in New Mexico Democratic primaries are not benefited by, dependent on, or elected due to big donors spending tens or hundreds of thousands and even millions of dollars to elect the candidates of their choice.
+      </p>
+
+
+      <p>The Democratic Party is the party of the working class and Americans who believe in a one person, one vote democracy where our elections are determined by We the People as equal citizens –– not billionaires and big corporations; and working class voters should have no doubt that the candidates chosen in our primaries are not beholden to the same billionaires and corporations that are exploiting and hurting them. The platform of the Democratic Party of New Mexico (DPNM) affirms that “money is not speech and corporations are not people” and “demand campaign finance reform and the repeal of laws that enable secret money in politics."</p>
+
+      <p>The DPNM, as a voluntary association, has the authority and responsibility to regulate its internal affairs, including nominating processes and primary elections, to ensure fairness, integrity, and alignment with our values. To strengthen our party’s brand, win back trust from our voters, and empower our party to win elections and govern to deliver for the working class, the DPNM must act to confront the crisis of big money corrupting our democracy within the arena under our direct authority: our primary elections.
+      </p>
+      <p>We need your help. On March 7th, 2026, the People's Primary Pledge Resolution was presented to the Delegates at the New Mexico Democratic Party Pre-Primary Convention. If you are a New Mexico Democrat, please show your support by endorsing our People's Primary Pledge <a href="https://docs.google.com/forms/d/1qZ0G_spbb-gp9QDk4cCp1rOlROBGZLrNG2fxdfgXKD8/viewform?edit_requested=true">here</a> and talking to members of the NM State Central Committee (SCC). We encourage everyone to read the policy for themselves to understand it clearly.</p>
+      <p>Other state parties like Arizona, North Carolina and even the DNC itself, have committed to enact reforms like the People's Primary. Want your state to be next? Contact us and we will connect you with our network of organizers and resources to help you along the way.</p>
+
+    </section>
+  
+    <section id="peoplesprimary">
+    <h2>CLICK HERE TO READ: <a href="https://drive.google.com/file/d/1dx9ZgvfFPaSvsoBRfVWagxgKD5UfSNct/view" target="_blank" rel="noopener noreferrer">The People's Primary Policy and FAQs</a></h2>
+    </section>
+  
+
+  <section id="ppendorsements" class="py-16 bg-gray-100">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Policy Endorsements</h2>
+    <a href="#national-endorsements" class="nav-link"><i>See National Leaders</i></a>
+    <br>
+    <p>Want to add your name as an endorser? Go to <a href="https://docs.google.com/forms/d/e/1FAIpQLSem6u-X98LBdwODXy1wdywDfKEsmaBoSrXaXoOM6wMsJZKlFQ/viewform">this form</a> to sign in support.</p>
+    <p>Helpful vocabulary: ADP = Arizona Democratic Party,  LD = Legislative District, SCM = (ADP) State Committee Member, PC = Precinct Committeeperson</p>
+    <!-- Arizona Leaders -->
+    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Arizona Leaders</h3>
+    <ul id="arizona-endorsements" class="space-y-2">
+      <li><strong>Sara Attleson</strong>, Chair, Democratic Party of New Mexico</li>
+      <li><strong>Cam Crawford</strong>, Vice-Chair, Democratic Party of New Mexico</li>
+      <li><strong>Javier Martinez</strong>, NM Speaker of the House</li>
+      <li><strong>Jacob Trujillo</strong>, Chair, Democratic Party of Bernalillo County</li>
+      <li><strong>Harold Pope, Jr.</strong>, NM State Senator (Dist. 23), SCC</li>
+      <li><strong>Antoinette Sedillo Lopez</strong>, NM State Senator (Dist. 16)</li>
+      <li><strong>Dede Feldman</strong>, former NM State Senator (Dist. 13)</li>
+      <li><strong>Debbie O'Malley</strong>, NM State Senator (Dist. 13)</li>
+      <li><strong>Eleanor Chavez</strong>, NM State Representative (Dist. 26), SCC</li>
+      <li><strong>Miguel P. Garcia</strong>, NM State Representative (Dist. 14)</li>
+      <li><strong>Patricia Roybal Caballero</strong>, NM State Representative (Dist. 13), SCC</li>
+      <li><strong>Joaquin Baca</strong>, Albuquerque City Councilor (Dist. 2)</li>
+      <li><strong>Tammy Fiebelkorn</strong>, Albuquerque City Councilor (Dist. 7)</li>
+      <li><strong>Robert Kmak</strong>, Chair, Pct. 154, Bernalillo County</li>
+      <li><strong>Terry Storch</strong>, Chair, Pct. 185, Bernalillo County</li>
+      <li><strong>Sarah Cobb</strong>, Chair, Pct. 108, Bernalillo County, SCC</li>
+      <li><strong>Deborah Potter</strong>, Chair, Ward 15E, Bernalillo County, SCC</li>
+      <li><strong>Lora Lucero</strong>, Chair, Ward 11A, Bernalillo County, PDA-CNM</li>
+      <li><strong>Coby Gentry</strong>, Young Democrats of NM</li>
+      <li><strong>Marty Jacobson</strong>, LGBTQIA+ Caucus</li>
+      <li><strong>Ronnie Ray</strong>, Rural Caucus</li>
+      <li><strong>Carl Peterson</strong>, Vice-Chair Ward 31A, SCC</li>
+      <li><strong>Glenn Griffin</strong>, Grant County Democratic Party, Ward AW Chair</li>
+      <li><strong>Charles Bennett</strong>, Vice-Chair, Ward 19B, Bernalillo County, SCC</li>
+      <li><strong>Roxanne Allen</strong>, CCC CD1, Bernalillo County</li>
+      <li><strong>Lawrence Compton</strong>, Chair, Ward 17C, Bernalillo County</li>
+      <li><strong>Nancy M. Bearce</strong>, CCC CD1, Bernalillo County</li>
+      <li><strong>Jane Yee</strong>, Chair, DPBC Resolutions Committee, CCC CD1, Bernalillo County, SCC</li>
+      <li><strong>Lourdes Remillard</strong>, Chair, Pct. 162, Bernalillo County, SCC</li>
+      <li><strong>Barbara Grothus</strong>, Vice-Chair, Ward 14C, Bernalillo County, SCC</li>
+      <li><strong>Eric Olivas</strong>, CCC, CD1, SCC</li>
+      <li><strong>Donald A. Gallegos</strong>, Ward Chair, 31C, Bernalillo County, SCC</li>
+      <li><strong>Daniel Alfredo Garcia</strong>, CCC CD1, Secretary of DPBC</li>
+      <li><strong>Karl Horak</strong>, CCC CD1</li>
+      <li><strong>Tracey Jordan</strong>, Chair, Pct. 195, Bernalillo County</li>
+      <li><strong>Ralph Wrons</strong>, Vice Chair, Ward 24B, Bernalillo County</li>
+      <li><strong>Donald Meaders</strong>, CCC CD1, SCC</li>
+      <li><strong>Julie Rochman</strong>, Chair, Ward 31B, Bernalillo County</li>
+      <li><strong>Maria Felice Garcia</strong>, Chair, Pct. 165, Bernalillo County, SCC</li>
+      <li><strong>Ana Canales</strong>, Chair, Ward 25B, Bernalillo County, SCC</li>
+      <li><strong>Jennifer Thorne-Lehman</strong>, Chair, Pct. 408</li>
+      <li><strong>Margaret Warigia Bowman</strong>, Chair, Ward 30D, Bernalillo County</li>
+      <li><strong>Alex Applegate</strong>, Environmental Justice Caucus, SCC</li>
+      <li><strong>Jennifer de Garmo</strong>, CCC CD1</li>
+      <li><strong>Frank Theodore Cloak Jr. a/k/a Ted Cloak</strong>, Chair, Pct. 640, Bernalillo County</li>
+      <li><strong>Rachel Coleman</strong>, Environmental Justice Caucus, SCC</li>
+      <li><strong>Chase Jacques-Maynes</strong>, Chair, Environmental Justice Caucus, SCC</li>
+      <li><strong>Nancy Galloway</strong>, SCC - Alt</li>
+      <li><strong>Janet Resnick-Wandel</strong>, Chair, Pct. 15, Bernalillo County</li>
+      <li><strong>Christine McIntosh</strong></li>
+      <li><strong>Ann Lowe</strong>, Grant County Democratic Party</li>
+      <li><strong>Frances Gonzales</strong>, Fuerzas Unidas Caucus Vice-Chair, SCC</li>
+      <li><strong>Wendy Graves</strong></li>
+      <li><strong>Barbara Gabioud</strong></li>
+      <li><strong>Mark Duran</strong></li>
+      <li><strong>Tom Wakely</strong></li>
+      <li><strong>Harry Browne</strong></li>
+      <li><strong>Ronald Lee Ray, Chair</strong>, DPNM Rural Caucus</li>
+      <li><strong>Jennifer Lamborn</strong></li>
+      <li><strong>Maree McHugh</strong></li>
+      <li><strong>Margaret L. Hadderman</strong></li>
+      <li><strong>Doreen McKnight</strong>, Vice-Chair, Ward 11C</li>
+      <li><strong>Claudia Risner</strong>, SCC</li>
+      <li><strong>Grace Dukes</strong></li>
+      <li><strong>Arnold Lane Leckman</strong></li>
+      <li><strong>Janet Wallace-Ortiz</strong>, Grant County SCC</li>
+      <li><strong>Stephen Smith</strong>, Rio Grande Indivisible</li>
+      <li><strong>Deborah Michel</strong>, Young Democrats of New Mexico National Committee Person</li>
+      <li><strong>Melinda Smith</strong></li>
+      <li><strong>Nancy Stephens</strong></li>
+      <li><strong>Michael Effron</strong>, Chair, Precinct 550</li>
+      <li><strong>Carol Trujillo-Fay</strong></li>
+      <li><strong>Matthew “Mateo” Martinez</strong>, Ward 11-C Delegate</li>
+      <li><strong>Lisa Franzen</strong></li>
+      <li><strong>Mara Salcido</strong>, Precinct chair and delegate ward 11C</li>
+      <li><strong>Sarah Stephen</strong></li>
+      <li><strong>Marisol Enriquez (she/her/ella)</strong>, Precinct Chair, 460</li>
+      <li><strong>Denise Fort</strong></li>
+      <li><strong>Sandra Griffin</strong>, GCDP delegate</li>
+      <li><strong>Madigan Ray</strong></li>
+      <li><strong>Pamela Neas</strong>, SCC, CCC EC Sandoval, Ward B Chair</li>
+      <li><strong>Rebecca Black</strong></li>
+      <li><strong>Karen Umland</strong>, PDA-CNM, Delegate Ward 11A</li>
+      <li><strong>Lisa Padilla</strong>, LMSW, Chair, Ward 14C, CCC</li>
+      <li><strong>Loralyn Conover</strong>, Chair, Ward 12B precinct 66</li>
+      <li><strong>Chris Crouch</strong>, SCC, CCC, Chair, Ward 22B Bernalillo - E. Mtns</li>
+
+    </ul>
+    <!-- National Leaders -->
+    <h3 class="text-2xl font-semibold text-gray-700 mt-10 mb-4">National Leaders for the AZ Pledge</h3>
+    <ul id="national-endorsements" class="space-y-2">
+      <li><strong>Sen. Bernie Sanders</strong>, US Senator, Vermont <a href="https://x.com/BernieSanders/status/1930703444425248943"><i>(Statement of support)</i></a></li>
+      <li><strong>Rep. Ro Khanna</strong>, US Congressman, CA-17 <a href="https://x.com/RoKhanna/status/1930759856442757214"><i>(Statement of support)</i></a></li>
+      <li><strong>Rep. Pramila Jayapal</strong>, US Congresswoman, WA-7</li>
+      <li><strong>Larry Cohen</strong>, Past President Communication Workers of America; Board Chair, Our Revolution; DNC Member</li>
+      <li><strong>Lawrence Lessig</strong>, Chair, Equal Citizens; Professor of Law and Leadership at Harvard Law School</li>
+      <li><strong>Alan Minsky</strong>, Executive Director, Progressive Democrats of America, Our Revolution</li>
+    </ul>
+  </div>
+</section>
+  
+  <section id="why">
+      <h2>Why This Matters</h2>
+      <div class="collapsible-section">
+        <h3>The Research is Clear</h3>
+        <button class="toggle-button">Show More</button>
+        <div class="content">
+          <ul>
+            <li><strong>Big Money pushes politics rightward.</strong> Removing bans on outside spending boosts Republican success and makes state legislatures more conservative. (<a href="https://events.bse.eu/live/files/1919-stephanewolton52630">Abdul-Razzak et al., 2017</a>)</li>
+            <li><strong>Voters hate Big Money.</strong> 77% of Americans support limits on campaign spending. When people believe money controls politics, they feel unheard and disengage. (<a href="https://www.pewresearch.org/short-reads/2018/05/08/most-americans-want-to-limit-campaign-spending-say-big-donors-have-greater-political-influence/">Pew Research Center, 2018</a>; <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/ssqu.13356">Haenschen et al., 2024</a>; <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4461514">Schnakenberg et al., 2023</a>)</li>
+            <li><strong>Big Money breaks our party and our government.</strong> Outside spending fragments coalitions and undermines effective governance in legislatures. (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3655691">Norton & Pildes, 2020</a>; <a href="https://journals.sagepub.com/doi/10.1177/1354068819834528">Manento, 2019</a>)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapsible-section">
+        <h3>Big Money is Bigger than Ever</h3>
+        <button class="toggle-button">Show More</button>
+        <div class="content">
+          <ul>
+            <li><strong>Nearly 60% of ads in 2022 Democratic House primaries</strong> were funded by outside groups, not candidates.</li>
+            <li><strong>In 2012, just 159 donors gave $1 million or more</strong>, accounting for nearly 60% of all Super PAC funding nationwide.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapsible-section">
+        <h3>New Mexico Hasn't Been Spared from Outside Spending</h3>
+        <button class="toggle-button">Show More</button>
+        <div class="content">
+          <ul>
+            <li><strong>NM In Depth editors discuss elections and dark money with guest Mason Graham of Common Cause</strong> <a href="https://www.youtube.com/watch?v=Z1HMygfyJow">YouTube</a></li>
+            <li><strong>Getting Big Money Out of Politics</strong> - <a href="https://www.commoncause.org/new-mexico/work/campaign-public-financing/">Common Cause New Mexico</a></li>
+            <li><strong>Big money flows to most powerful NM lawmakers</strong> | <a href="https://www.newsfromthestates.com/article/big-money-flows-most-powerful-nm-lawmakers">News From The States</a></li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <section id="resolution">
+    <h2>The Resolution</h2>
+    <p><strong>Resolution Title: Resolution to Establish a People’s Primary Rule Deterring Billionaires and Corporations from Buying or Unduly Influencing New Mexico Democratic Primaries</strong></p>
+    <p><strong>Submitted by: the DPNM Ad Hoc Committee appointed by Chair Attleson in December 2025.</strong></p>
+    <p>WHEREAS, New Mexico Democrats from every corner of the State know the damaging influence that big outside money has on our local, state and federal elections, and we want to ensure that our elected leaders represent our interests, rather than big outside corporate interests; and</p>
+    <p>WHEREAS, on September 25, 2025, the Resolutions Committee of the Democratic Party of Bernalillo County (DPBC) approved a resolution entitled <strong>To Establish a “People’s Primary” Policy Deterring Billionaires and Corporations from Buying or Unduly Influencing Democratic Primaries;</strong> and</p>
+    <p>WHEREAS, such Resolution was presented to the County Central Committee of the DPBC on October 11, 2025 and adopted by acclimation; and</p>
+    <p>WHEREAS, such Resolution was presented to the County Central Committee of the DPBC on October 11, 2025 and adopted by acclimation; and</p>
+    <p>WHEREAS, such Resolution charged the ad hoc committee with developing the proposed DPNM People's Primary Rule to implement and enforce the goal of the Resolution; and</p>
+    <p>WHEREAS, such Resolution directed that the People’s Primary Rule was to be prepared and submitted for a vote by the State Central Committee at the earliest possible date in the spring of 2026; and</p>
+    <p>WHEREAS, the ad-hoc committee worked diligently and expeditiously from December until the present to fulfill its mandate, and sought legal advice and counsel, and drafted a Rule to ensure, to the greatest extent possible, that candidates in New Mexico Democratic primaries are not benefited by, dependent on, or elected due to big donors spending tens or hundreds of thousands and even millions of dollars to elect the candidates of their choice; and</p>
+    <p>WHEREAS, the Democratic Party is the party of the working class and Americans who believe in a one person, one vote democracy where our elections are determined by We the People as equal citizens –– not billionaires and big corporations; and</p>
+    <p>WHEREAS, working class voters should have no doubt that the candidates chosen in our primaries are not beholden to the same billionaires and corporations that are exploiting and hurting them; and</p>
+    <p>WHEREAS, the platform of the Democratic Party of New Mexico (DPNM) affirms that “money is not speech and corporations are not people”; and “demand campaign finance reform and the repeal of laws that enable secret money in politics;” and</p>
+    <p>WHEREAS, the DPNM, as a voluntary association, has the authority and responsibility to regulate its internal affairs, including nominating processes and primary elections, to ensure fairness, integrity, and alignment with our values; and</p>
+    <p>WHEREAS, to strengthen our party’s brand, win back trust from our voters, and empower our party to win elections and govern to deliver for the working class, the DPNM must act to confront the crisis of big money corrupting our democracy within the arena under our direct authority: our primary elections.</p>
+    <p><strong>NOW, THEREFORE, BE IT RESOLVED</strong> that the Democratic Party of New Mexico will establish a "People's Primary" Rule to reduce, to the greatest extent possible, the use of massive private wealth to buy or unduly influence our primary elections. This Rule will ensure, to the greatest extent possible, that candidates in New Mexico Democratic primaries are not benefited by, dependent on, or elected due to outside or independent electioneering spending funded by big donors who are circumventing legal limits on direct contributions to a candidate’s campaign fund to spend tens or hundreds of thousands and even millions of dollars of private wealth to elect the candidates of their choice.</p>
+    <p><strong>BE IT FURTHER RESOLVED</strong> that the proposed People’s Primary Rule will be submitted to the DPNM Rules Committee for its consideration and possible revision in April 2026 at the Call of the DPNM Chair, and will be submitted to the State Central Committee (SCC) for its consideration and possible revision in May 2026.  If approved by the SCC and incorporated into the DPNM’s governing documents, the People’s Primary Rule is expected to be effective in 2027 and beyond.</p>
+
+    
+  </section>
+
+<section id="about-us">
+  <h2>About Us</h2>
+    <p>The <strong>Stop Big Money NM</strong> campaign is a project of a grassroots of Democrats committed to building a party that puts the working class first, not billionaires and big corporations. We are united by the mission to bring the progressive values of our communities to the state legislature and beyond, to create the New Mexico and United States of America we all deserve.
+    Interested in joining us? Email Lora Lucero at loralucero3@gmail.com.
+
+    <p><i>See a problem with the website? Contact the original site author, Ben Armentrout, at benarmentrout29@gmail.com. Please be nice - I'm better at building lasers than websites :) Or reach out to Amelia Pardo at Beaei@pm.me who has updated it for New Mexico.</i></p>
+    <p><i>Media or other inquiries can be directed to loralucero3@gmail.com.</i></p>
+</section>
+
+</main>
+
+<a class="floating-button" href="https://docs.google.com/forms/d/1qZ0G_spbb-gp9QDk4cCp1rOlROBGZLrNG2fxdfgXKD8/viewform?edit_requested=true" target="_blank">
+        Endorse the People's Primary &#128279;
+</a>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector('.nav-header');
+    const offset = header ? header.offsetHeight : 0;
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const targetID = this.getAttribute("href");
+        const targetElement = document.querySelector(targetID);
+
+        if (targetElement) {
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+  document.querySelectorAll('.toggle-button').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      const isExpanded = button.classList.contains('expanded');
+
+      if (isExpanded) {
+        button.classList.remove('expanded');
+        content.style.display = 'none';
+      } else {
+        button.classList.add('expanded');
+        content.style.display = 'block';
+      }
+    });
+  });
+</script>
+</body>
+</html>
